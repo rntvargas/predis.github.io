@@ -1,7 +1,7 @@
-/* Some CSS styling */
+/* awita de uwu */
 
 #sketchpadapp {
-    /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
+    /* Evitar que el texto cercano se seleccione al arrastrar accidentalmente fuera del canvas */
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -10,36 +10,35 @@
     user-select: none;
 }
 
-#clear_button{
+#clear_button {
   margin-left: 15px;
   font-weight: bold;
   color: blue;
 }
 
-#confidence{
+#confidence {
   font-family: 'Josefin Sans', sans-serif;
   margin-top: 7.5%;
 }
 
-#content{
+#content {
   margin: 0 auto;
   padding: 2% 15%;
   padding-bottom: 0;
 }
 
-.welcome{
+.welcome {
    text-align: center;
    position: relative;
    color: honeydew;
-   background-color: greenyellow;
+   background-color: deepskyblue; 
    padding-top: 1%;
    padding-bottom: 1%;
    font-weight: bold;
    font-family: 'Prompt', sans-serif;
-   
 }
 
-#footer{
+#footer {
   text-align: center;
   background-color: #292b2c;
   color: #fff;
@@ -47,39 +46,37 @@
   padding-bottom: 0%;
 }
 
-
-#predict_button{
+#predict_button {
   margin-right: 15px;
   color: blue;
   font-weight: bold;
 }
 
-#prediction_heading{
+#prediction_heading {
   font-family: 'Josefin Sans', sans-serif;
   margin-top: 7.5%;
 }
 
-#result{
+#result {
   font-family: 'Pacifico', cursive;
   font-size: 5rem;
 }
 
 #sketchpad {
-    /* float:left; */
-    height:250px;
-    width:250px;
-    border:2px solid #888;
-    border-radius:4px;
-    /* position:relative; /* Necessary for correct mouse co-ords in Firefox */ 
+    /* Dimensiones y borde del canvas */
+    height: 250px;
+    width: 250px;
+    border: 2px solid #888;
+    border-radius: 4px;
 }
 
-#source{
+#source {
   padding: 0 100px;
   text-align: center;
   margin-bottom: 10%;
 }
 
-#title{
+#title {
   padding: 1.5% 15%;
   margin: 0 auto;
   text-align: center;
@@ -95,48 +92,45 @@
     margin-bottom: 20px;
 }
 
-.buttons_div{
+.buttons_div {
   margin-bottom: 30px;
 }
 
-.heading{
+.heading {
   font-family: 'Varela Round', sans-serif;
   font-weight: 700;
   font-size: 3rem;
   display: inline;
 }
 
-.leftside{
+.leftside {
   text-align: center;
   margin: 0 auto;
   margin-top: 4%;
-  /* padding-left: 10%; */
 }
 
-
-.predicted_answer{
+.predicted_answer {
   text-align: center;
   margin: 0 auto;
   padding: 3% 5%;
   padding-top: 0;
-  /* padding-left: 10%; */
 }
 
-.responsive_img{
+.responsive_img {
   width: 75%;
-    height: 10vw;
-    object-fit: cover;
+  height: 10vw;
+  object-fit: cover;
 }
 
-.social-media-icons{
+.social-media-icons {
   margin: 10px 40px;
 }
 
-.source-column{
+.source-column {
   padding: 3% 2%;
 }
 
-.source-h2{
+.source-h2 {
   text-align: center;
   font-family: 'Pacifico', cursive;
   font-size: 2rem;
@@ -169,13 +163,14 @@ a:active {
   color: white;
   text-decoration: none;
 }
-p{
-  font-family: 'Source Code Pro', monospace,sans-serif;
+
+p {
+  font-family: 'Source Code Pro', monospace, sans-serif;
   margin-top: 1%;
 }
 
 @media (min-width: 720px) {
-  .leftside{
+  .leftside {
     padding-left: 10%;
   }
 }
