@@ -1,176 +1,121 @@
-/* awita de uwu */
-
-#sketchpadapp {
-    /* Evitar que el texto cercano se seleccione al arrastrar accidentalmente fuera del canvas */
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-#clear_button {
-  margin-left: 15px;
-  font-weight: bold;
-  color: blue;
-}
-
-#confidence {
-  font-family: 'Josefin Sans', sans-serif;
-  margin-top: 7.5%;
-}
-
-#content {
-  margin: 0 auto;
-  padding: 2% 15%;
-  padding-bottom: 0;
+/* Estilo general */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
 }
 
 .welcome {
-   text-align: center;
-   position: relative;
-   color: honeydew;
-   background-color: deepskyblue; 
-   padding-top: 1%;
-   padding-bottom: 1%;
-   font-weight: bold;
-   font-family: 'Prompt', sans-serif;
-}
-
-#footer {
   text-align: center;
-  background-color: #292b2c;
-  color: #fff;
-  padding-top: 1%;
-  padding-bottom: 0%;
-}
-
-#predict_button {
-  margin-right: 15px;
-  color: blue;
+  color: #f4f9ff;
+  background-color: #007acc;
+  padding: 1rem 0;
   font-weight: bold;
 }
 
-#prediction_heading {
-  font-family: 'Josefin Sans', sans-serif;
-  margin-top: 7.5%;
-}
-
-#result {
-  font-family: 'Pacifico', cursive;
-  font-size: 5rem;
+#sketchpadapp {
+  user-select: none;
 }
 
 #sketchpad {
-    /* Dimensiones y borde del canvas */
-    height: 250px;
-    width: 250px;
-    border: 2px solid #888;
-    border-radius: 4px;
+  height: 250px;
+  width: 250px;
+  border: 2px solid #888;
+  border-radius: 4px;
+  margin: 1rem auto;
+  display: block;
 }
 
-#source {
-  padding: 0 100px;
-  text-align: center;
-  margin-bottom: 10%;
-}
-
-#title {
-  padding: 1.5% 15%;
-  margin: 0 auto;
+.buttons_div {
+  margin-bottom: 20px;
   text-align: center;
 }
 
 .btn {
-    font-size: 15px;
-    padding: 10px;
-    -webkit-appearance: none;
-    background: #eee;
-    border: 1px solid #888;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.buttons_div {
-  margin-bottom: 30px;
+.btn:hover {
+  background-color: #005f99;
+}
+
+#result {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  color: #007acc;
+}
+
+#confidence {
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+#content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+#title {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .heading {
   font-family: 'Varela Round', sans-serif;
-  font-weight: 700;
-  font-size: 3rem;
-  display: inline;
-}
-
-.leftside {
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 4%;
+  font-size: 2.5rem;
 }
 
 .predicted_answer {
+  margin-top: 1rem;
+}
+
+footer {
   text-align: center;
-  margin: 0 auto;
-  padding: 3% 5%;
-  padding-top: 0;
-}
-
-.responsive_img {
-  width: 75%;
-  height: 10vw;
-  object-fit: cover;
-}
-
-.social-media-icons {
-  margin: 10px 40px;
-}
-
-.source-column {
-  padding: 3% 2%;
-}
-
-.source-h2 {
-  text-align: center;
-  font-family: 'Pacifico', cursive;
-  font-size: 2rem;
-}
-
-hr {
-  border: dotted #808080 6px;
-  border-bottom: none;
-  width: 4%;
-  margin: 50px auto;
-  margin-bottom: 100px;
-}
-
-a:link {
+  background-color: #292b2c;
   color: white;
-  text-decoration: none;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
 }
 
-a:visited {
-  color: white;
+/* Accesibilidad */
+a {
+  color: #007acc;
   text-decoration: none;
 }
 
 a:hover {
-  color: white;
-  text-decoration: none;
+  color: #005f99;
 }
 
-a:active {
-  color: white;
-  text-decoration: none;
-}
+/* Responsivo */
+@media (max-width: 720px) {
+  #sketchpad {
+    width: 200px;
+    height: 200px;
+  }
 
-p {
-  font-family: 'Source Code Pro', monospace, sans-serif;
-  margin-top: 1%;
-}
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
 
-@media (min-width: 720px) {
-  .leftside {
-    padding-left: 10%;
+  #content {
+    padding: 1rem;
+  }
+
+  #result {
+    font-size: 2.5rem;
   }
 }
